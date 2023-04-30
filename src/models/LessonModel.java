@@ -50,6 +50,17 @@ public class LessonModel {
         this.examples = examples;
     }
 
+    public String getExamples() {
+        String ex = "";
+        for (int i = 0; i < this.examples.size(); i++) {
+            if (i > 0) {
+                ex += "\n";
+            }
+            ex += this.examples.get(i);
+        }
+        return ex;
+    }
+
     public void addExample(String example) {
         this.examples.add(example);
     }

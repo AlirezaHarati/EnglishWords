@@ -1,3 +1,9 @@
+import Notification.Notification;
+import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.scene.paint.Color;
+import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 import models.FileModel;
 import models.LessonModel;
 import models.ReadingModel;
@@ -6,19 +12,46 @@ import utils.Files;
 import utils.JSON;
 
 import javax.management.relation.Relation;
+import java.awt.*;
 import java.util.ArrayList;
 import java.util.Map;
 
-public class Main {
+public class Main extends Application {
+
+    @Override
+    public void start(Stage stage) {
+        Scene scene = new Scene(Notification.getInstanc().getMainPane());
+
+        FileModel fileModel = new Main().getFileModels("./data/504/Lesson1.json");
+        Notification.getInstanc().sendNotification(fileModel.getLessonModels()[0]);
+        Notification.getInstanc().sendNotification(fileModel.getLessonModels()[1]);
+        Notification.getInstanc().sendNotification(fileModel.getLessonModels()[2]);
+        Notification.getInstanc().sendNotification(fileModel.getLessonModels()[4]);
+
+        scene.setFill(Color.TRANSPARENT);
+        stage.setScene(scene);
+        stage.setAlwaysOnTop(true);
+        stage.setResizable(false);
+        stage.initStyle(StageStyle.TRANSPARENT);
+
+        Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+        stage.setX(screenSize.getWidth()
+                - Notification.getInstanc().getMainPane().getPrefWidth()
+                - 10
+        );
+        stage.setY(10);
+        stage.show();
+    }
 
     public static void main(String[] args) {
-        FileModel fileModel = new Main().getFileModels("./data/504/Lesson1.json");
-
-        System.out.println(fileModel.getLessonModels()[0].getWord());
-        System.out.println(fileModel.getLessonModels()[0].getSynonym());
-        System.out.println("-------------------------");
-        System.out.println(fileModel.getReadingModel().getTitle());
-        System.out.println(fileModel.getReadingModel().getContent());
+        launch(args);
+//        FileModel fileModel = new Main().getFileModels("./data/504/Lesson1.json");
+//
+//        System.out.println(fileModel.getLessonModels()[0].getWord());
+//        System.out.println(fileModel.getLessonModels()[0].getSynonym());
+//        System.out.println("-------------------------");
+//        System.out.println(fileModel.getReadingModel().getTitle());
+//        System.out.println(fileModel.getReadingModel().getContent());
     }
 
     public FileModel getFileModels(String path) {
