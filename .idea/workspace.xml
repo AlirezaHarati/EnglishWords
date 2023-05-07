@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="EnglishWords:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="e653cc3c-5221-49f6-bbfe-3515c5f918a5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Notification/Notification.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Notification/NotificationPane.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/EnglishWords_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Service/Service.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Service/ServiceHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/504/Lesson1.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/504/Lesson1.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/LessonModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/LessonModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notification/NotificationPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Notification/NotificationPane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/Tools.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/Tools.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,13 +43,14 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "E:/Work/Libraies/json-simple-1.1.jar",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.0",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.lookFeel"
   }
@@ -69,6 +78,7 @@
       <option name="presentableId" value="Default" />
       <updated>1682518964194</updated>
       <workItem from="1682518967105" duration="7217000" />
+      <workItem from="1683383580515" duration="7707000" />
     </task>
     <servers />
   </component>

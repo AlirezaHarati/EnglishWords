@@ -34,6 +34,13 @@ public class NotificationPane extends AnchorPane {
     }
 
     private void initComponents() {
+        this.setOnMouseClicked(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent event) {
+                ((VBox) getPane().getParent()).getChildren().remove(getPane());
+            }
+        });
+
         this.lblWord = new Label();
         this.lblWord.setFont(new Font(16d));
         this.lblWord.setStyle("-fx-font-weight: bold");
@@ -42,12 +49,6 @@ public class NotificationPane extends AnchorPane {
         this.lblWord.setPrefWidth(190d);
 
         this.lblMeaning = new Label();
-        this.lblMeaning.setOnMouseClicked(new EventHandler<MouseEvent>() {
-            @Override
-            public void handle(MouseEvent event) {
-                ((VBox) getPane().getParent()).getChildren().remove(getPane());
-            }
-        });
         this.lblMeaning.setFont(new Font(16d));
         this.lblMeaning.setStyle("-fx-font-weight: bold");
         this.lblMeaning.setPrefWidth(190d);

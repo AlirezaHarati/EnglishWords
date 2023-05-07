@@ -3,6 +3,7 @@ package utils;
 public class Tools {
 
     private static Tools tools;
+    public int TIME_IN_SECOND = 120;
 
     private Tools() {
     }
