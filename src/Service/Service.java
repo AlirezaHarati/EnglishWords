@@ -99,7 +99,7 @@ public class Service {
             lessonModels[i].setMeaning(String.valueOf(dataArray.get(i).get("meaning")));
             lessonModels[i].setPhonetic(String.valueOf(dataArray.get(i).get("phonetic")));
 
-            examples = (JSONArray) dataArray.get(0).get("examples");
+            examples = (JSONArray) dataArray.get(i).get("examples");
             if (examples != null && examples.size() > 0) {
                 for (int j = 0; j < examples.size(); j++) {
                     lessonModels[i].addExample(String.valueOf(examples.get(j)));
