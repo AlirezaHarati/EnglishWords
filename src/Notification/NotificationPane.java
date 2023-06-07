@@ -42,14 +42,14 @@ public class NotificationPane extends AnchorPane {
         });
 
         this.lblWord = new Label();
-        this.lblWord.setFont(new Font(16d));
+        this.lblWord.setFont(new Font(14d));
         this.lblWord.setStyle("-fx-font-weight: bold");
         this.lblWord.setTextFill(Color.WHITE);
         this.lblWord.setAlignment(Pos.CENTER_LEFT);
         this.lblWord.setPrefWidth(190d);
 
         this.lblMeaning = new Label();
-        this.lblMeaning.setFont(new Font(16d));
+        this.lblMeaning.setFont(new Font(12d));
         this.lblMeaning.setStyle("-fx-font-weight: bold");
         this.lblMeaning.setPrefWidth(190d);
         this.lblMeaning.setTextFill(Color.WHITE);
